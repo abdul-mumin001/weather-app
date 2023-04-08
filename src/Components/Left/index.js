@@ -28,7 +28,7 @@ export default function LeftComponents() {
         <span className='locationName'>{city.city} - {city.admin_name} - {city.country}</span>
     </div>
     <div className='weatherContainer'>
-    
+    <img className="weatherIcon" alt="myit" src={`http://openweathermap.org/img/wn/${current.weather[0].icon}@2x.png`} />
         <h1 className='weatherTemp'>
             {Math.round(current.temp.max)} <sup>o</sup>C
         </h1>

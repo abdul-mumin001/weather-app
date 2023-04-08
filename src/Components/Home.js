@@ -1,15 +1,18 @@
 import React from 'react'
-import ChooseStateComponents from './ChooseState'
+import LeftComponents from './Left';
+import ChooseStateComponents from './ChooseState';
+import WeekInfoCardComponents from './WeekInfoCard';
+import HumidityComponents from './Humidity';
 export default function HomeComponents() {
   return (
     <>
     <div className='homeWrap'>
         <div className='weatherSection'>
-            Left Components
+           <LeftComponents />
             <div className='rightSide'>
                 <ChooseStateComponents />
-                2. weekinfo <br />
-                3. Humidity
+                <WeekInfoCardComponents /> <br />
+               <HumidityComponents />
             </div>
         </div>
     </div>
